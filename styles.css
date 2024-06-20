@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+h3 {
+    margin-bottom: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 20vh 1fr;
+}
+.sidebar {
+    background-color: rgb(30, 161, 201);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    grid-area: 1 / 1 / 3 / 2;
+    color: white;
+    padding: 20px;
+    padding-top: 10px;
+}
+.sidebar h3 {
+    font-size: 1.4rem;
+}
+.sidebar h4 {
+    font-size: 1.2rem;
+}
+.dashboard {
+    display: flex;
+    gap: 10px;
+}
+.support, .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tab {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.dashboard > h3 {
+    margin-top: 15px;
+}
+.sidebar svg {
+    width: 50px;
+    height: 50px;
+}
+.tab > svg {
+    width: 20px;
+    height: 20px;
+}
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.top-header {
+    display: grid;
+    grid-template-columns: 4.3fr 1fr;
+}
+.top-header svg {
+    width: 25px;
+    height: 25px;
+}
+.left-side {
+    display: grid;
+    grid-template-columns: 40px 2fr 1fr;
+}
+.left-side > input {
+    height: 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(216, 216, 216)
+}
+.right-side {
+    display: grid;
+    grid-template-columns: 25px 35px 1fr;
+    gap: 25px;
+}
+.right-side > svg, .left-side {
+    margin-top: 5px;
+}
+.right-side > h4 {
+    margin-top: 7px;
+}
+
+.smaller {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+}
+.bottom-header {
+    display: grid;
+    grid-template-columns: 60px 6fr 3fr;
+    gap: 20px;
+    align-items: center;
+}
+.big {
+    grid-area: 1 / 1 / 3 / 2;
+    width: 60px;
+    height: 60px;
+}
+.greeting {
+    grid-area: 1 / 2 / 3 / 2;
+}
+.actions {
+    display: grid;
+    grid-template-columns: 160px 160px 100px;
+    grid-area: 1 / 3 / 3 / 4;
+}
+.action {
+    height: 40px;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 30px;
+    width: 100px;
+}
+.info {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgb(235, 234, 234);
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.projects {
+    display: grid;
+    grid-area: 1 / 1 / 3 / 2;
+    grid-template-rows: 40px 1fr;
+    padding-top: 10px;
+}
+.info h3 {
+    font-size: 1.3rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+.card, .announce-block, .trending-group {
+    background-color: white;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1.5rem 1fr 0.5rem 0.5rem;
+    grid-template-columns: 1fr 8rem;
+    border-left: gold solid 6px;
+}
+.card > h4 {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.2rem;
+}
+.card > p {
+    grid-area: 2 / 1 / 3 / 3;
+}
+.icons {
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.icons > svg {
+    width: 30px;
+}
+.announcements {
+    padding-top: 10px;
+} 
+.announcements > h3, .trending > h3 {
+    margin-bottom: 20px;
+}
+.announce-block {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+.announce-block > h4 {
+    font-size: 1.1rem;
+}
+.announce-block > p {
+    margin-bottom: 20px;
+}
+.bottom-block {
+    padding-bottom: 10px;
+}
+.announcement-text {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.trending-group {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr;
+    gap: 5px;
+}
+.small {
+    
+    grid-area: 1 / 1 / 3 / 2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
